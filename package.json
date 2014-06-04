@@ -1,0 +1,15 @@
+{
+  "name": "Basic-Express",
+  "version": "1.0.0",
+  "description": "Basic-Express",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shaun Nesbitt"
+}
