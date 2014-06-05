@@ -12,11 +12,11 @@ define(function (require) {
         },
 
         base: function() {
-            Backbone.Events.trigger("router:change", { page : "base" });
+            BackboneEvt.trigger("router:change", { page : "base" });
         },
 
         defaultAction: function() {
-            Backbone.Events.trigger("router:change", { page : "default" });
+            BackboneEvt.trigger("router:change", { page : "default" });
         }
 
     })

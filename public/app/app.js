@@ -19,6 +19,7 @@ define(function (require) {
         },
 
         initialize: function () {
+            window.BackboneEvt = _.extend({}, Backbone.Events);
             this.$el = $("#application");
             this.render();
             this.initListeners();
@@ -31,7 +32,7 @@ define(function (require) {
         },
 
         initListeners: function() {
-            Backbone.Events.on("router:change", this._handleRouterChange, this);
+            BackboneEvt.on("router:change", this._handleRouterChange, this);
         },
 
         _handleRouterChange: function(options) {
